@@ -1,0 +1,93 @@
+version: '3'
+
+volumes:
+  production_postgres_data: {}
+  production_postgres_data_backups: {}
+  # production_traefik: {}
+ # production_static_volume: {}
+  # production_media_volume: {}
+
+networks:
+  backend:
+    driver: "bridge"
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/production/django/Dockerfile
+    image: challenge_production_django
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - ./.envs/.production/.django
+      - ./.envs/.production/.postgres
+    command: /start
+    volumes:
+      - ./challenge/static:/opt/services/challenge/static
+      - ./challenge/media:/opt/services/challenge/media
+    networks:
+      - backend
+
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: challenge_production_postgres
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data
+      - production_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.production/.postgres
+    networks:
+      - backend
+
+#  traefik:
+#    build:
+#      context: .
+#      dockerfile: ./compose/production/traefik/Dockerfile
+#    image: challenge_production_traefik
+#    depends_on:
+#      - django
+#    volumes:
+#      - production_traefik:/etc/traefik/acme
+#    ports:
+#      - "0.0.0.0:80:80"
+#      - "0.0.0.0:443:443"
+
+  nginx:
+    # build:
+      #context: .
+      # dockerfile: ./compose/production/nginx/Dockerfile
+    image: nginx:latest
+    ports:
+      - "0.0.0.0:80:80"
+      # - "0.0.0.0:443:443"
+    volumes:
+      - ./compose/production/nginx/conf.d:/etc/nginx/conf.d
+      - ./challenge/static:/opt/services/challenge/static
+      - ./challenge/media:/opt/services/challenge/media
+    restart: "always"
+    expose:
+      - "80"
+    depends_on:
+       - django
+    networks:
+      - backend
+
+
+  redis:
+    image: redis:5.0
+    networks:
+      - backend
+
+#  awscli:
+#    build:
+#      context: .
+#      dockerfile: ./compose/production/aws/Dockerfile
+#    env_file:
+#      - ./.envs/.production/.django
+#    volumes:
+#      - production_postgres_data_backups:/backups

@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-28 01:57+0000\n"
+"PO-Revision-Date: 2019-05-28 01:45-0508\n"
+"Last-Translator: b'  <yugo132@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: challenge/templates/account/account_inactive.html:5
+#: challenge/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr "Cuenta Inactiva"
+
+#: challenge/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr "Esta cuenta esta inactiva."
+
+#: challenge/templates/account/email.html:7
+msgid "Account"
+msgstr "Cuenta"
+
+#: challenge/templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr "Dirección de Correo Electrónico"
+
+#: challenge/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "El siguiente correo electrónico esta asociado a su cuenta:"
+
+#: challenge/templates/account/email.html:27
+msgid "Verified"
+msgstr "Verificado"
+
+#: challenge/templates/account/email.html:29
+msgid "Unverified"
+msgstr "No Verificado"
+
+#: challenge/templates/account/email.html:31
+msgid "Primary"
+msgstr "Primario"
+
+#: challenge/templates/account/email.html:37
+msgid "Make Primary"
+msgstr "Hacer Primario"
+
+#: challenge/templates/account/email.html:38
+msgid "Re-send Verification"
+msgstr "Reenviar Verificación "
+
+#: challenge/templates/account/email.html:39
+msgid "Remove"
+msgstr "Remover"
+
+#: challenge/templates/account/email.html:46
+msgid "Warning:"
+msgstr "Waring:"
+
+#: challenge/templates/account/email.html:46
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Actualmente tu cuenta no tiene ningún correo electrónico asociado. deberías "
+"agregar un correo electrónico para que puedas recibir notificaciones, "
+"reiniciar tu contraseña, etc."
+
+#: challenge/templates/account/email.html:51
+msgid "Add E-mail Address"
+msgstr "Agregar Dirección de Correo Electrónico"
+
+#: challenge/templates/account/email.html:56
+msgid "Add E-mail"
+msgstr "Agregar Correo Electrónico"
+
+#: challenge/templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+"realmente deseas remover la dirección de correo electrónico seleccionada?"
+
+#: challenge/templates/account/email_confirm.html:6
+#: challenge/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "Confirma tu Dirección de Correo Electrónico."
+
+#: challenge/templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Por favor, confirma  que <a href=\"mailto:%(email)s\">%(email)s</a> es una "
+"dirección de correo valida para el usuario %(user_display)s."
+
+#: challenge/templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: challenge/templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Esta confirmacion de correo electronico ha expirado o es invalida. Porfavor "
+"<a href=\"%(email_url)s\"> solicita una nueva confirmación de correo "
+"electrónico.</a>."
+
+#: challenge/templates/account/login.html:7
+#: challenge/templates/account/login.html:11
+#: challenge/templates/account/login.html:44 challenge/templates/base.html:64
+msgid "Sign In"
+msgstr "Iniciar Sesión "
+
+#: challenge/templates/account/login.html:16
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"Porfavor inicia sesion con uno de los servicios disponibles. o, <a href="
+"\"%(signup_url)s\">Registrate</a>\n"
+"en %(site_name)s aqui abajo:"
+
+#: challenge/templates/account/login.html:26
+msgid "or"
+msgstr "o"
+
+#: challenge/templates/account/login.html:33
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"si aun no dispones de una cuenta, entonces porfavor <a href=\"%(signup_url)s"
+"\">registrate</a> primero."
+
+#: challenge/templates/account/login.html:43
+msgid "Forgot Password?"
+msgstr "Has olvidado tu contraseña?"
+
+#: challenge/templates/account/logout.html:5
+#: challenge/templates/account/logout.html:8
+#: challenge/templates/account/logout.html:17 challenge/templates/base.html:75
+msgid "Sign Out"
+msgstr "Cerrar sesión"
+
+#: challenge/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "Estas seguro de que deseas cerrar sesión?"
+
+#: challenge/templates/account/password_change.html:6
+#: challenge/templates/account/password_change.html:9
+#: challenge/templates/account/password_change.html:14
+#: challenge/templates/account/password_reset_from_key.html:5
+#: challenge/templates/account/password_reset_from_key.html:8
+#: challenge/templates/account/password_reset_from_key_done.html:4
+#: challenge/templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: challenge/templates/account/password_reset.html:7
+#: challenge/templates/account/password_reset.html:11
+#: challenge/templates/account/password_reset_done.html:6
+#: challenge/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr "Reiniciar contraseña"
+
+#: challenge/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Has olvidado tu contraseña? Ingresa tu dirección de correo electrónico acá "
+"abajo y enviaremos un email para que puedas reiniciar tu contraseña."
+
+#: challenge/templates/account/password_reset.html:21
+msgid "Reset My Password"
+msgstr "Reiniciar mi contraseña"
+
+#: challenge/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+"Porfavor contactanos si tu tienes algun problema reiniciando tu contraseña."
+
+#: challenge/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"hemos enviado un correo electronico. Porfavor contactanos si no lo recibes "
+"en unos minutos."
+
+#: challenge/templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr "Token Invalido"
+
+#: challenge/templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"El link para reinicio de contraseña es invalido, quizas ya ha sido usado. "
+"porfavor solicita un <a href=\"%(passwd_reset_url)s\">nuevo reinicio de "
+"contraseña</a>."
+
+#: challenge/templates/account/password_reset_from_key.html:18
+msgid "change password"
+msgstr "cambiar contraseña"
+
+#: challenge/templates/account/password_reset_from_key.html:21
+#: challenge/templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr "Tu contraseña ha sido cambiada."
+
+#: challenge/templates/account/password_set.html:6
+#: challenge/templates/account/password_set.html:9
+#: challenge/templates/account/password_set.html:14
+msgid "Set Password"
+msgstr "agregar contraseña"
+
+#: challenge/templates/account/signup.html:6
+msgid "Signup"
+msgstr "Registrarme"
+
+#: challenge/templates/account/signup.html:9
+#: challenge/templates/account/signup.html:19 challenge/templates/base.html:60
+msgid "Sign Up"
+msgstr "Registrarme"
+
+#: challenge/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Ya tienes una cuenta? Porfavor  <a href=\"%(login_url)s\">Inicia Sesion</a>."
+
+#: challenge/templates/account/signup_closed.html:5
+#: challenge/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr "Registro Cerrado"
+
+#: challenge/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+"Lo sentimos, pero actualmente el proceso de registro se encuentra cerrado."
+
+#: challenge/templates/account/verification_sent.html:5
+#: challenge/templates/account/verification_sent.html:8
+#: challenge/templates/account/verified_email_required.html:5
+#: challenge/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr "Verifica tu Direccion de Correo Electronico"
+
+#: challenge/templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"Hemos enviado un Correo de verificacion. Haz click en el link del correo "
+"para finalizar tu proceso de registro. Contactano si no recibes ningun "
+"correo en algunos minutos."
+
+#: challenge/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+"Esta parte del sitio requiere verificar tu identidad. por ello te pedimos "
+"que por favor verifiques tu correo electrónico."
+
+#: challenge/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+"Hemos enviado un correo de verificacion. Haz click en el link del correo. "
+"Contactanos si no recibes ningun correo en algunos minutos."
+
+#: challenge/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+"<strong>Nota:</strong> Tu puedes continuar <a href=\"%(email_url)s\">cambia "
+"tu direccion de correo electronico</a>."
+
+#: challenge/templates/base.html:55
+msgid "Perfil"
+msgstr "Perfil"
+
+#: challenge/templates/base.html:93
+msgid "Welcome"
+msgstr ""
+
+#: challenge/templates/base.html:97
+msgid ""
+"You need update your name in profile section to receive a good welcome "
+"message."
+msgstr ""
+
+#: challenge/users/apps.py:7
+msgid "Users"
+msgstr "Usuarios"
+
+#: challenge/users/forms.py:16
+msgid "This username has already been taken."
+msgstr "Este nombre de usuario ya se encuentra en uso."
+
+#: challenge/users/models.py:11
+msgid "Name of User"
+msgstr "Nombre del Usuario"
+
+#: config/settings/base.py:31
+msgid "English"
+msgstr "Ingles"
+
+#: config/settings/base.py:32
+msgid "Spanish"
+msgstr "Español"

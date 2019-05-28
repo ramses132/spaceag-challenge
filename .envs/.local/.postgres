@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=challenge
+POSTGRES_USER=mNmtBWNrkZSweyfNGEqExLIXSlDjDHzS
+POSTGRES_PASSWORD=HgSiph2s6FvJnFQm3qG9Tpcy2C2V07QknEJ6yRryi31G1rkU8VYJ4r8XYVzjsohl
