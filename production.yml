@@ -4,8 +4,8 @@ volumes:
   production_postgres_data: {}
   production_postgres_data_backups: {}
   # production_traefik: {}
- # production_static_volume: {}
-  # production_media_volume: {}
+  production_static_volume: {}
+  production_media_volume: {}
 
 networks:
   backend:
@@ -25,8 +25,8 @@ services:
       - ./.envs/.production/.postgres
     command: /start
     volumes:
-      - ./challenge/static:/opt/services/challenge/static
-      - ./challenge/media:/opt/services/challenge/media
+      - production_static_volume:/app/staticfiles
+      - production_media_volume:/app/challenge/media
     networks:
       - backend
 
@@ -67,8 +67,8 @@ services:
       # - "0.0.0.0:443:443"
     volumes:
       - ./compose/production/nginx/conf.d:/etc/nginx/conf.d
-      - ./challenge/static:/opt/services/challenge/static
-      - ./challenge/media:/opt/services/challenge/media
+      - production_static_volume:/app/staticfiles
+      - production_media_volume:/app/challenge/media
     restart: "always"
     expose:
       - "80"
